@@ -10,7 +10,6 @@
 <body>
 
     <?php
-
         require_once('./DB_Connection.php');
         require('./insert_value.php');
         require('./view.php');
@@ -18,11 +17,8 @@
 
         if ($_SERVER["REQUEST_METHOD"] == "GET"){
 
-            if (isset($_GET['COM-connection'])) {
-                connection();
-            } 
-            if (isset($_GET['record'])) {
-                record();
+            if (isset($_GET['move'])) {
+                insert_value($_COOKIE['value']);
             }
             if (isset($_GET['view'])) {
                 value_history();
@@ -39,21 +35,20 @@
 
     <div class="voice_to_text"> 
         <h1>Voice command for servo motor</h1>
-        <h2 id="convert_text">choose a COM port then click on <i>speak</i> to start speaking</h2>
+        <h2 id="convert_text">Click on <i>Speak</i> to choose a COM port and to start speaking</h2>
+        <h2>to save the value into the database, press <i>Move</i> after you see your word appear on the screen</h2>
+        <h3 id="action">Current word</h3>
+        <button name="COM-connection" id="connection" onclick="COM_PORT()">Speak</button>
+        <a href="https://github.com/iAnasAbdullah/voice-command-arduino" target="_blank"><button>go to rapository</button></a>
 
 
-
-
-
-            <form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-                <button name="COM-connection" id="connection">Choose a COM port</button>
-                <button name="record"  id="click_to_record">speak</button>
-                <button name="view" id="value_history">history</button>
-                <a href="https://github.com/iAnasAbdullah/voice-command-arduino" target="_blank"><button>go to rapository</button></a>
+            <form method="GET" action="<?php echo $_SERVER["PHP_SELF"];?>">
+                <button name="move" value="<?php $_COOKIE['value']?>">Move</button>              
+                <button name="view" id="value_history">history</button>            
             </form>
 
         
     </div>
-
+    
 </body>
 </html>

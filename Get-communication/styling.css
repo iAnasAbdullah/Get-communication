@@ -1,11 +1,11 @@
 * {
-    text-align: center;
-    background-color: silver;
+  text-align: center;
+  background-color: silver;
 }
 
-.voice_to_text, h1, h2, i{
-    background-color: beige;
-    
+.voice_to_text, h1, h2, h3, i, form{
+  background-color: beige;
+  
 }
 
 #convert_text {
@@ -62,3 +62,40 @@ button:active {
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
 }
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	
+		background-color: #55608f;
+	
+}
+
+	td:hover, td:before {
+		position: relative;
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+
+	}
