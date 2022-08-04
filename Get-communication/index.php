@@ -39,7 +39,7 @@
         <h2>to save the value into the database, press <i>Move</i> after you see your word appear on the screen</h2>
         <h3 id="action">Current word</h3>
         <button name="COM-connection" id="connection" onclick="COM_PORT()">Speak</button>
-        <a href="https://github.com/iAnasAbdullah/voice-command-arduino" target="_blank"><button>go to rapository</button></a>
+        <a href="https://github.com/iAnasAbdullah/Get-communication" target="_blank"><button>go to rapository</button></a>
 
 
             <form method="GET" action="<?php echo $_SERVER["PHP_SELF"];?>">
