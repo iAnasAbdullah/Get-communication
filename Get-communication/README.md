@@ -13,8 +13,13 @@ same rules applies here, there are three key words that the program will have wh
 2. يسار
 3. منتصف
 
-once you say one of the following words, it will appear in your screen where you can save the result into a database by clicking on [MOVE]
+once you say one of the following words, it will appear in your screen where you can save the result into a database by clicking on [MOVE] and if the current word matches one of the above key words, it will be written to the database.
+NOTE: you can use sentences rather than just words
 
+## how to set up
+1. you need to download xampp which is a server provider for launching php files.
+2. install the whole (Get-communication) file.
+3. path to xampp where you saved it and look for 
 
 ```sql
 
