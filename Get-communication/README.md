@@ -3,20 +3,18 @@
 
 ## INTRODUCTION
 
-this website is a contiuous progression to the previous <a href="http://www.google.com">SERVO COMMUNICATION</a> website that i made previously, now the website have an online database attached to it from a website called heroku,  
+this website is a contiuous progression to the previous <a href="https://github.com/iAnasAbdullah/voice-command-arduino">VOICE-COMMAND-ARDUINO</a> website that i made previously, now the website have an online database attached to it from a website called heroku. 
 
-## Setting up the database
+## how it works
 
-You will need to install PostgreSQL and connect to the databse server using either the command line client `psql -U username -W' or a GUI client like pgAdmin. 
-First, we will create a file called `database.ini` that contains the database connection parameters and access credentials. Example:
+i've combined two buttons at once which were [Choose a COM Port] and [Speak] into one button which is now [Speak] that lets you choose your COM port first then allows you to speak.
+same rules applies here, there are three key words that the program will have which are:
+1. يمين
+2. يسار
+3. منتصف
 
-```plaintext
-host=localhost
-port=5432
-database=apps.tasks
-user=todoappusr
-password=YOUR_PASSWORD
-```
+once you say one of the following words, it will appear in your screen where you can save the result into a database by clicking on [MOVE]
+
 
 ```sql
 
