@@ -19,11 +19,14 @@ NOTE: you can use sentences rather than just words
 ## how to set up
 1. you need to download xampp which is a server provider for launching php files.
 2. install the whole (Get-communication) file.
-3. path to xampp where you saved it and look for 
+3. path to xampp where you saved it and look for htdocs
+4. upload (Get-communication) file there, the path would look something like this: C:\xampp\htdocs
+5. launch xampp and on Apache module click on start, give it a couple of seconds and the server should be up. 
+6. go to Chrome and on the linkbar type http://localhost/Get-communication/index.php
 
 ```sql
 
-/*Create Table*/
+/*Table used*/
 CREATE TABLE IF NOT EXISTS servo_values (
     id SERIAL PRIMARY KEY,
     servo_value int NOT NULL,
